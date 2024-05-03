@@ -50,12 +50,11 @@
   border-radius: 5px;
   min-width: 225px;
   min-height: 190px;
-  margin: 1vw;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  margin: 20px;
 }
 
 .card > h2 {
@@ -96,7 +95,7 @@ div img {
   height: 50px;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 975px) {
   .categories {
     align-items: center;
   }
