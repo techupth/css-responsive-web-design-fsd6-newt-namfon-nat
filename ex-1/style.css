@@ -36,13 +36,13 @@
 
 .categories-row-1 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 20px;
 }
 
 .categories-row-2 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .card {
