@@ -1,1 +1,113 @@
 /* Start coding here */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: x-large;
+  text-align: center;
+}
+
+.half-highlight {
+  background: linear-gradient(0deg, rgb(255, 157, 28) 50%, transparent 50%);
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.categories-row-1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.categories-row-2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 5px;
+  min-width: 225px;
+  min-height: 190px;
+  margin: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 20px;
+}
+
+.card > h2 {
+  padding-top: 70px;
+  font-size: medium;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card > .card-bottom {
+  padding-top: 10px;
+  font-size: small;
+  font-weight: 300;
+}
+
+.card-center {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  color: white;
+  font-size: large;
+}
+
+.card.bg-lightgray {
+  background-color: rgb(248, 249, 250);
+}
+
+.card.bg-orange {
+  background-color: rgb(255, 106, 0);
+}
+
+div img {
+  width: 50px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .categories {
+    align-items: center;
+  }
+
+  .categories-row-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .categories-row-2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
