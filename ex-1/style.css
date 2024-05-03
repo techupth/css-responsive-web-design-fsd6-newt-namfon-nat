@@ -92,6 +92,7 @@ body {
 
 .card.bg-orange {
   background-color: rgb(255, 106, 0);
+  padding: 75px;
 }
 
 button {
