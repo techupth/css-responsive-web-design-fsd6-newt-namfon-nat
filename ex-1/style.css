@@ -96,7 +96,7 @@ body {
 
 button {
   cursor: pointer;
-  background-color: white;
+  background-color: transparent;
   border: none;
 }
 
