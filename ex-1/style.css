@@ -2,7 +2,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -47,6 +47,7 @@ main {
   border: 2px solid rgba(211, 211, 211, 0.2);
   border-radius: 5%;
   width: 200px;
+  height: 150px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -55,27 +56,31 @@ main {
   position: relative;
 }
 
+.button-card:hover {
+  background-color: rgba(211, 211, 211, 0.2);
+}
+
 .point-arrow {
   position: absolute;
   right: 20px;
   bottom: 20px;
-  color: var(--blue-color);
+  width: 20px;
 }
 
 .icon {
   border-radius: 50%;
   width: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .categories-name {
-  font-size: 14px;
+  font-size: small;
   font-weight: bold;
   color: var(--blue-color);
 }
 
 .count-job {
-  font-size: 10px;
+  font-size: x-small;
   color: var(--grey-color);
 }
 
@@ -97,13 +102,15 @@ main {
 #more-arrow {
   right: 30px;
   top: 80px;
+  width: 15px;
 }
 
-#more-jobs img {
+.bg-more {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
+  height: 100%;
   z-index: 0;
 }
 
