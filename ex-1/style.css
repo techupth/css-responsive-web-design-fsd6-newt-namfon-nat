@@ -1,1 +1,123 @@
 /* Start coding here */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+:root {
+  --blue-color: #13466b;
+  --grey-color: #929292;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header,
+main {
+  /* border: 1px solid black; */
+  margin-top: 30px;
+  width: 860px;
+}
+
+header {
+  color: var(--blue-color);
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.highlight {
+  background: linear-gradient(0deg, #ff8345 50%, transparent 50%);
+}
+
+.button-card {
+  box-sizing: border-box;
+  border: 2px solid rgba(211, 211, 211, 0.2);
+  border-radius: 5%;
+  width: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+}
+
+.point-arrow {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: var(--blue-color);
+}
+
+.icon {
+  border-radius: 50%;
+  width: 40px;
+  margin-bottom: 30px;
+}
+
+.categories-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--blue-color);
+}
+
+.count-job {
+  font-size: 10px;
+  color: var(--grey-color);
+}
+
+#more-text,
+#more-arrow {
+  color: white;
+  z-index: 1;
+  position: absolute;
+  /* border: 1px solid black; */
+}
+
+#more-text {
+  width: 30%;
+  top: 50px;
+  left: 30px;
+  font-size: 14px;
+}
+
+#more-arrow {
+  right: 30px;
+  top: 80px;
+}
+
+#more-jobs img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  header,
+  main {
+    margin-top: 30px;
+    width: max-content;
+    height: fit-content;
+  }
+
+  main {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+}
